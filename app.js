@@ -4,6 +4,7 @@ const app = express()
 require('dotenv').config()
 
 app.get('/', (req, res) => {
+    console.log(process.env.NAME);
     res.send("Heyy, I'm on AWS!");
 })
 
